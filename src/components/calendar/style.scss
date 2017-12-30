@@ -1,0 +1,38 @@
+.App-calendar{
+ display: inline-flex;
+ flex: 0 0 254px;
+ // width: 254px;
+}
+
+%button {
+  background-color: #E9ECEF;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-repeat:no-repeat;
+}
+
+.calendar-button {
+  &-left {
+    @extend %button;
+    background-image: url('../../assets/arrow2.svg');
+    background-position: 7px center;
+  }
+  &-right {
+    @extend %button;
+    background-image: url('../../assets/arrow.svg');
+    background-position: 10px center;
+  }
+}
+
+
+.calendar-date{
+  /*display: inline-block;*/
+  line-height: 24px;
+  font-family: HelveticaNeue-Medium;
+  font-size: 15px;
+  color: #000000;
+  padding-left: 13.5px;
+  padding-right: 12.5px;
+
+}

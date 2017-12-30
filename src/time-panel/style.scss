@@ -1,0 +1,25 @@
+.App-time-panel {
+  display: flex;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 24px;
+  height: 46px;
+  border-top: 1px solid #E9ECEF;
+  border-bottom: 1px solid #E9ECEF;
+}
+
+.App-timeline{
+  display: inline-flex;
+  align-items: center;
+  &-time{
+    font-family: HelveticaNeue-Bold;
+    font-size: 11px;
+    color: #858E98;
+    letter-spacing: 0.4px;
+    width: 49px;
+    height: 13px;
+    text-align: center;
+    margin-left: 8.5px;
+    margin-right: 8.5px;
+  }
+}
