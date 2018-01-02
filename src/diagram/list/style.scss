@@ -1,0 +1,65 @@
+.diagram-list{
+  padding-left: 25px;
+  padding-top: 22px;
+  height: 100%;
+  width: 245px;
+  border-right: 1px solid #E9ECEF;
+}
+
+.meetingroom{
+  display: flex;
+  height: 44px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  &:hover{
+    & .timeline{
+      background: #98A9B9;
+    }
+    & .meetingroom-name{
+      font-family: HelveticaNeue-Bold;
+      color: #0070E0;
+    }
+  }
+}
+
+.description{
+  flex: 0 0 220px;
+}
+
+.timeline{
+  flex: 0 0 1035px;
+  height: 28px;
+  background: #D5DFE9;
+  align-self: center;
+  z-index: 5;
+
+}
+
+.list-floor:first-child{
+  margin-top: 0px;
+}
+
+
+.list-floor{
+  margin-top: 20px;
+  font-family: HelveticaNeue-Bold;
+  font-size: 11px;
+  color: #858E98;
+  letter-spacing: 0.4px;
+}
+
+.meetingroom-name{
+  margin-top: 4px;
+  font-family: HelveticaNeue-Medium;
+  font-size: 15px;
+  color: #000000;
+  line-height: 17px;
+}
+
+.meetingroom-capacity{
+  margin-top: 2px;
+  font-family: HelveticaNeue;
+  font-size: 13px;
+  color: #000000;
+  line-height: 17px;
+}

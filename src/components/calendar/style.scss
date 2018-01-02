@@ -1,7 +1,8 @@
 .App-calendar{
  display: inline-flex;
- flex: 0 0 254px;
- // width: 254px;
+ flex: 0 0 245px;
+ justify-content: center;
+ align-items:center;
 }
 
 %button {
@@ -27,7 +28,6 @@
 
 
 .calendar-date{
-  /*display: inline-block;*/
   line-height: 24px;
   font-family: HelveticaNeue-Medium;
   font-size: 15px;
