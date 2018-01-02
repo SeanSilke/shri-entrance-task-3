@@ -3,6 +3,7 @@ import {Header} from './header'
 import {TimePanel} from './time-panel'
 import {Diagram} from './diagram'
 import {Tooltip} from './components/tooltip'
+import {Modal} from './components/modal'
 import './app.css'
 
 class App extends Component {
@@ -13,6 +14,7 @@ class App extends Component {
         <TimePanel/>
         <Diagram/>
         <Tooltip/>
+        <Modal/>
       </div>
     );
   }

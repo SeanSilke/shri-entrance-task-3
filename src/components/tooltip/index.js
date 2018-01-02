@@ -11,7 +11,7 @@ export const Tooltip = () => <div className='App-tooltip'>
   </div>
   <div className='tooltip-participants'>
     <div className='tooltip-participants-main'>
-      <div class="icon vader"></div>
+      <div className="icon vader"></div>
       Дарт Вейдер
     </div>
     <div className='tooltip-participants-rest'>

@@ -9,4 +9,13 @@
   font-size: 13px;
   color: #FFFFFF;
   letter-spacing: 0;
+  user-select: none;
+    &:hover{
+      background: #0059FF;
+    }
+    &:active{
+      background:
+        linear-gradient(rgba(11,0,255,0.80), rgba(11,0,255,0.80)),
+        linear-gradient(#0059FF, #0059FF) ;
+    }
 }
