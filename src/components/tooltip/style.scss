@@ -1,0 +1,84 @@
+.App-tooltip{
+  position: fixed;
+  padding-left: 16px;
+  padding-top: 16px;
+  top: 300px;
+  left: 400px;
+  height: 115px;
+  width: 338px;
+  background: #FFFFFF;
+  box-shadow: 0 1px 16px 0 rgba(0,44,92,0.28);
+  border-radius: 8px;
+  z-index: 30;
+  &::before{
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    border-bottom-color: #fff;
+    border-width: 10px;
+    margin-left: -10px;
+  }
+}
+
+.App-tooltip-button{
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 24px;
+  height: 24px;
+  background: #E9ECEF;
+  border-radius: 100px;
+  background-repeat:no-repeat;
+  background-position: center;
+  background-image: url('../../assets/edit.svg');
+}
+
+.tooltip-header{
+  font-family: HelveticaNeue-Bold;
+  font-size: 15px;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.tooltip-details {
+  margin-top: 2px;
+  font-family: HelveticaNeue;
+  font-size: 13px;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 17px;
+}
+
+.tooltip-participants{
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  font-family: Helvetica;
+  font-size: 13px;
+  color: #37003E;
+  letter-spacing: 0;
+  line-height: 17px;
+  &-main{
+    color: #000000;
+  }
+}
+
+.tooltip-participants-main{
+  display: flex;
+  align-items:center;
+  & .icon{
+    margin-right: 8px;
+  }
+}
+
+.icon{
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: black;
+}

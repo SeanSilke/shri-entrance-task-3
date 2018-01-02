@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Header} from './header'
 import {TimePanel} from './time-panel'
 import {Diagram} from './diagram'
+import {Tooltip} from './components/tooltip'
 import './app.css'
 
 class App extends Component {
@@ -11,6 +12,7 @@ class App extends Component {
         <Header/>
         <TimePanel/>
         <Diagram/>
+        <Tooltip/>
       </div>
     );
   }
