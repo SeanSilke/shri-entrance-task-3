@@ -1,7 +1,7 @@
 import React from 'react'
 import {Header} from '../components/header'
 import {Button} from '../components/button';
-import {TimePanel} from '../time-panel'
+import {TimePanel} from '../components/time-panel'
 import {Diagram} from '../diagram'
 import {Tooltip} from '../components/tooltip'
 
