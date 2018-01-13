@@ -7,9 +7,7 @@ import {Tooltip} from '../components/tooltip'
 
 
 
-export const Diagram = () => {
-
-  return  <Fragment>
+export const Diagram = () => <Fragment>
     <Header >
       <Button title='Создать встречу'/>
     </Header>
@@ -17,4 +15,3 @@ export const Diagram = () => {
     <List />
     <Tooltip/>
   </Fragment>
-}

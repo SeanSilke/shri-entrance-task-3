@@ -3,15 +3,6 @@
   height: 44px;
   margin-top: 4px;
   margin-bottom: 4px;
-  // NOTE: Работает при наведение на родителя
-  //       должно работать только при навидении на
-  //       свободную комнату
-  &:hover{
-    & .meetingroom-name{
-      font-family: HelveticaNeue-Bold;
-      color: #0070E0;
-    }
-  }
 }
 
 .meetingroom-description{
@@ -36,6 +27,11 @@ div:first-child > .list-floor{
   font-size: 15px;
   color: #000000;
   line-height: 17px;
+  &#{&}-hover{
+    font-family: HelveticaNeue-Bold;
+    color: #0070E0;
+  }
+
 }
 
 .meetingroom-capacity{

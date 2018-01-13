@@ -6,7 +6,8 @@
     "node-sass-chokidar": "^0.0.3",
     "npm-run-all": "^4.1.2",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-hover-observer": "^2.0.2"
   },
   "devDependencies": {
     "react-scripts": "1.0.17"
