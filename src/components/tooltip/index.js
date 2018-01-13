@@ -18,7 +18,4 @@ export const Tooltip = () => <div className='App-tooltip'>
       &nbsp; и 12 участников
     </div>
   </div>
-
-
-
 </div>

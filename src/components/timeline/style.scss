@@ -6,10 +6,8 @@
     font-size: 11px;
     color: #858E98;
     letter-spacing: 0.4px;
-    width: 49px;
+    width: 66px;
     text-align: center;
-    margin-left: 8.5px;
-    margin-right: 8.5px;
     position: relative;
   }
 }
@@ -17,7 +15,7 @@
 .App-timeline-time-line{
   position: absolute;
   top: 28px;
-  left: 23.5px;
+  left: 50%;
   width: 1px;
   height: 1000px;
   background: rgba(19,100,205,0.10);

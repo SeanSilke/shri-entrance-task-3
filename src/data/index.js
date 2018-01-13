@@ -1,24 +1,71 @@
-export const data  = [
+
+export const floors = {
+  7: [
+    {
+      title:'Ржавый Фред',
+      capacity:'3—6 человек',
+      id:1
+    },
+    {
+      title: 'Прачечная',
+      capacity:'до 10 человек',
+      id:2
+    },
+    {
+      title: 'Жёлтый дом',
+      capacity:'до 10 человек',
+      id:3
+    },
+    {
+      title: 'Оранжевый тюльпан',
+      capacity:'до 10 человек',
+      id:4
+    },
+  ],
+  6: [
+    {
+      title:'Джокер',
+      capacity:'3—6 человек',
+      id:5
+    },
+    {
+      title: 'Мариванна',
+      capacity:'3—6 человек',
+      id:6
+    },
+    {
+      title: 'Тонкий Боб',
+      capacity:'3—6 человек',
+      id:7
+    },
+    {
+      title: 'Чёрная вдова',
+      capacity:'3—6 человек',
+      id:8
+    },
+    {
+      title: 'Белорусский ликёр',
+      capacity:'3—6 человек',
+      id:9
+    },
+  ],
+}
+
+export const schedule = [
   {
-    flor:  ' 7 ЭТАЖ',
-    rooms: [
-      {
-        name:'Ржавый Фред',
-        capacity:'3—6 человек'
-      },
-      {
-        name: 'Прачечная',
-        capacity:'до 10 человек'
-      },
-      {
-        name: 'Жёлтый дом',
-        capacity:'до 10 человек'
-      },
-      {
-        name: 'Оранжевый тюльпан',
-        capacity:'до 10 человек'
-      },
-    ],
+    dateStart: 90,
+    dateEnd: 200
   },
-  {},
+  {
+    dateStart: 250,
+    dateEnd: 300
+  },
+  {
+    dateStart: 350,
+    dateEnd: 500
+  },
+  {
+    dateStart: 600,
+    dateEnd: 800
+  },
 ]

@@ -1,0 +1,47 @@
+.meetingroom{
+  display: flex;
+  height: 44px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  // NOTE: Работает при наведение на родителя
+  //       должно работать только при навидении на
+  //       свободную комнату
+  &:hover{
+    & .meetingroom-name{
+      font-family: HelveticaNeue-Bold;
+      color: #0070E0;
+    }
+  }
+}
+
+.meetingroom-description{
+  flex: 0 0 220px;
+}
+
+div:first-child > .list-floor{
+  margin-top: 0px;
+}
+
+.list-floor{
+  margin-top: 20px;
+  font-family: HelveticaNeue-Bold;
+  font-size: 11px;
+  color: #858E98;
+  letter-spacing: 0.4px;
+}
+
+.meetingroom-name{
+  margin-top: 4px;
+  font-family: HelveticaNeue-Medium;
+  font-size: 15px;
+  color: #000000;
+  line-height: 17px;
+}
+
+.meetingroom-capacity{
+  margin-top: 2px;
+  font-family: HelveticaNeue;
+  font-size: 13px;
+  color: #000000;
+  line-height: 17px;
+}

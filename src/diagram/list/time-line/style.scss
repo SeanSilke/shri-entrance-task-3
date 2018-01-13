@@ -1,0 +1,23 @@
+.timeline{
+  flex: 0 0 1035px;
+  height: 28px;
+  align-self: center;
+  z-index: 5;
+  position: relative;
+}
+
+.timeLine-slot{
+  &-free{
+    position: absolute;
+    background: #FFFFFF;
+    height: 100%;
+  }
+  &-occupied{
+    position: absolute;
+    background: #D5DFE9;
+    height: 100%;
+    &:hover{
+      background: #99A9B9;
+    }
+  }
+}
