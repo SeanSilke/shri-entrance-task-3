@@ -3,6 +3,7 @@ import {schedule} from '../../../data';
 import {getFreeSlots} from './helpers'
 import  {DIAGRAM_LENGTH} from '../../../data/constants'
 import './style.css'
+import './timeLine-slot.css'
 
 import ReactHoverObserver from 'react-hover-observer';
 
