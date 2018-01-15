@@ -1,0 +1,27 @@
+.time{
+  display: flex;
+  width: 420px;
+  &-input-date{
+    width:238px;
+  }
+  &-input-time{
+    width:72px;
+  }
+  &-dash{
+    font-family: HelveticaNeue-Bold;
+    font-size: 13px;
+    color: #000000;
+    letter-spacing: 0.47px;
+    margin-top: 29px;
+  }
+}
+
+.time > div {
+  &:first-child{
+    margin-right: 17px
+  }
+  &:nth-child(3){
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+}

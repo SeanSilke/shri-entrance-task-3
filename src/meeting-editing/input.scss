@@ -1,0 +1,30 @@
+.editing-input {
+  background: #FFFFFF;
+  border: 2px solid #E9ECEF;
+  border-radius: 4px;
+  padding-left: 10px;
+  height: 38px;
+  line-height: 38px;
+  width: 420px;
+  font-family: HelveticaNeue;
+  font-size: 13px;
+  color: #000000;
+  letter-spacing: 0.47px;
+  &:hover{
+    border-color: #007DFF;
+  }
+  &:focus{
+    outline: none;
+  }
+  &:active{
+    outline: none;
+  }
+
+}
+
+.editing-input-title{
+  font-family: HelveticaNeue-Bold;
+  font-size: 13px;
+  color: #000000;
+  margin-bottom: 4px;
+}

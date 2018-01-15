@@ -1,0 +1,15 @@
+.editing-button{
+  font-family: HelveticaNeue-Medium;
+  font-size: 13px;
+  color: #000000;
+  letter-spacing: 0;
+  height: 36px;
+  line-height: 36px;
+  padding: 0px 16px;
+  background: #E9ECEF;
+  border-radius: 4px;
+  margin-left: 16px;
+  &:first-child {
+    margin-left: 0px;
+  }
+}
