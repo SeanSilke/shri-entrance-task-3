@@ -4,7 +4,7 @@ import './style.css'
 import './input.css'
 import {Timepicker} from './components/timepicker'
 import {MembersSelect} from './components/members-select'
-import {RoomSelect} from './components/room-select'
+import {RoomSelect , RoomRecommended} from './components/room-select'
 import {TitleInput} from './components/title-input'
 import {Button} from './components/button'
 
@@ -26,6 +26,7 @@ export const Editing = () => <Fragment>
     <div className='row'>
       <MembersSelect/>
       <RoomSelect/>
+      {/* <RoomRecommended/> */}
     </div>
 
   </div>

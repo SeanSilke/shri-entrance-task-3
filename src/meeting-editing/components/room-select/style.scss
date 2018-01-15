@@ -1,0 +1,61 @@
+.editing-room{
+  &-selected{
+    background: #007DFF;
+    &:active{
+      background:
+        linear-gradient(rgba(11,0,255,0.80), rgba(11,0,255,0.80)),
+        linear-gradient(#0059FF, #0059FF) ;
+    }
+    &  > span {
+      color: #FFFFFF;
+    }
+  }
+  &-recommended{
+    background: #E9ECEF;
+    margin-bottom: 9px;
+    &:hover{
+      background: #98A9B9;
+    }
+    &:active{
+      background:
+        linear-gradient(rgba(0,0,0,0.12), rgba(0,0,0,0.12)),
+        linear-gradient(#98A9B9, #98A9B9) ;
+    }
+    &  > span {
+      color: #000000;
+    }
+  }
+  &-selected, &-recommended{
+    position: relative;
+    border-radius: 4px;
+    padding-left: 10px;
+    height: 37px;
+    line-height: 37px;
+    width: 420px;
+    &  > span {
+      font-family: HelveticaNeue;
+      font-size: 13px;
+      letter-spacing: 0;
+      line-height: 17px;
+      user-select:none;
+      &:first-of-type{
+        font-family: HelveticaNeue-Bold;
+        margin-right: 16px;
+      }
+    }
+  }
+  &-cancelButton{
+    width: 36px;
+    height: 36px;
+    mask-repeat:no-repeat;
+    mask-position: center;
+    position: absolute;
+    top:0px;
+    right: 2px;
+    mask-image: url('../../../assets/close.svg');
+    background-color: #ffffff;
+    &:hover{
+      background: #000000;
+    }
+  }
+}
