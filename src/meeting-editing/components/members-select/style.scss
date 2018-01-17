@@ -1,0 +1,38 @@
+.multi-select{
+  &-dropdown{
+      width: 420px;
+      background: #FFFFFF;
+      box-shadow: 0 1px 10px 0 rgba(0,44,92,0.28);
+      border-radius: 4px;
+      max-height: 136px;
+      overflow-x: scroll;
+  }
+  &-option{
+    display: flex;
+    align-items: center;
+    padding: 5px 16px;
+    font-family: HelveticaNeue;
+    font-size: 13px;
+
+    letter-spacing: 0;
+    & > span{
+      color: #858E98;
+      &:first-of-type{
+        margin-left: 8px;
+        color: #000000;
+      }
+    }
+    &:hover{
+      background: #F6F7F9;
+      & > span{
+        font-family:HelveticaNeue-Bold;
+      }
+    }
+  }
+  &-userpic{
+    width:24px;
+    height: 24px;
+    border-radius: 100%;
+    background-color: #afc8e2;
+  }
+}

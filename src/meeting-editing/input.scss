@@ -19,6 +19,9 @@
   &:active{
     outline: none;
   }
+  &::placeholder{
+    color: #858E98;
+  }
 
 }
 
