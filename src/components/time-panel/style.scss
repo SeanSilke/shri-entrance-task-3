@@ -2,10 +2,15 @@
   display: flex;
   height: 46px;
   border-bottom: 1px solid #E9ECEF;
-  margin-top: 72px;
   position: fixed;
   max-width: 1280px;
   width: 100%;
   z-index: 10;
   background: #ffffff;
+  margin-top: 72px;
+  @media screen and (max-width: 360px) {
+    margin-top: 104px;
+    height: 33px;
+    position: static;
+  }
 }

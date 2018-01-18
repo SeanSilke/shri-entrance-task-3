@@ -2,6 +2,9 @@
   display: inline-flex;
   align-items: center;
   position: relative;
+  @media screen and (max-width: 360px) {
+    padding-left: 181px;
+  }
   &-hour{
     font-family: HelveticaNeue-Bold;
     font-size: 11px;
@@ -36,7 +39,7 @@
   height: 20px;
   background: #007DFF;
   border-radius: 100px;
-  z-index: 1;
+  z-index: 10;
   &-line{
     position: absolute;
     top: 20px;

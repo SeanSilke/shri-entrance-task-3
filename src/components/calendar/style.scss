@@ -3,6 +3,17 @@
  flex: 0 0 245px;
  justify-content: center;
  align-items:center;
+ @media screen and (max-width: 360px) {
+   position: fixed;
+   z-index: 1000;
+   background: #fff;
+   min-width: 360px;
+   width: 100vw;
+   top: 48px;
+   padding: 12px 16px;
+   justify-content:space-between;
+   border-bottom: 1px solid rgb(233, 236, 239);
+ }
 }
 
 %button {
@@ -11,6 +22,10 @@
   height: 24px;
   border-radius: 50%;
   background-repeat:no-repeat;
+  @media screen and (max-width: 360px) {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .calendar-button {
@@ -28,11 +43,9 @@
 
 
 .calendar-date{
-  line-height: 24px;
   font-family: HelveticaNeue-Medium;
   font-size: 15px;
   color: #000000;
   padding-left: 13.5px;
   padding-right: 12.5px;
-
 }

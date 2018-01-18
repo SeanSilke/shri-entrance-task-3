@@ -18,4 +18,7 @@
         linear-gradient(rgba(11,0,255,0.80), rgba(11,0,255,0.80)),
         linear-gradient(#0059FF, #0059FF) ;
     }
+    @media screen and (max-width: 360px) {
+      display: none;
+    }
 }

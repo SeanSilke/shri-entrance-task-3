@@ -2,7 +2,11 @@
   padding-left: 25px;
   padding-top: 22px;
   margin-top: 117px;
-  width: 245px;
+  @media screen and (max-width: 360px) {
+    margin-top: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+  }
   border-right: 1px solid #E9ECEF;
   position: relative;
   min-height: calc(100vh - 117px);
@@ -13,6 +17,9 @@
     height: 100%;
     background: #F6F7F9;
     left: 245px;
+    @media screen and (max-width: 360px) {
+      left: 181px;
+    }
     top: 0px;
   }
 }

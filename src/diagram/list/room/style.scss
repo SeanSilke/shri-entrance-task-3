@@ -3,14 +3,55 @@
   height: 44px;
   margin-top: 4px;
   margin-bottom: 4px;
+  @media screen and (max-width: 360px) {
+    margin: 0px;
+    background: #FFFFFF;
+    height: 59px;
+    border-bottom: 1px solid #E9ECEF;
+  }
+  &-description{
+    flex: 0 0 220px;
+    @media screen and (max-width: 360px) {
+      flex: 0 0 181px;
+      padding-left: 16px;
+    }
+  }
+
+  &-name{
+    margin-top: 4px;
+    font-family: HelveticaNeue-Medium;
+    font-size: 15px;
+    color: #000000;
+    line-height: 17px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    &#{&}-hover{
+      font-family: HelveticaNeue-Bold;
+      color: #0070E0;
+    }
+
+    @media screen and (max-width: 360px) {
+          width: 140px;
+    }
+  }
+
+  &-capacity{
+    margin-top: 2px;
+    font-family: HelveticaNeue;
+    font-size: 13px;
+    color: #000000;
+    line-height: 17px;
+  }
+
 }
 
-.meetingroom-description{
-  flex: 0 0 220px;
-}
 
 div:first-child > .list-floor{
   margin-top: 0px;
+    @media screen and (max-width: 360px) {
+      height: 37px;
+    }
 }
 
 .list-floor{
@@ -19,25 +60,11 @@ div:first-child > .list-floor{
   font-size: 11px;
   color: #858E98;
   letter-spacing: 0.4px;
-}
-
-.meetingroom-name{
-  margin-top: 4px;
-  font-family: HelveticaNeue-Medium;
-  font-size: 15px;
-  color: #000000;
-  line-height: 17px;
-  &#{&}-hover{
-    font-family: HelveticaNeue-Bold;
-    color: #0070E0;
+  @media screen and (max-width: 360px) {
+    background: #E9ECEF;
+    position: relative;
+    z-index: 1;
+    height: 45px;
+    margin-top: 0px;
   }
-
-}
-
-.meetingroom-capacity{
-  margin-top: 2px;
-  font-family: HelveticaNeue;
-  font-size: 13px;
-  color: #000000;
-  line-height: 17px;
 }
