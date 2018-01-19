@@ -14,6 +14,7 @@
     @media screen and (max-width: 360px) {
       flex: 0 0 181px;
       padding-left: 16px;
+      border-right: 1px solid #E9ECEF;
     }
   }
 
@@ -32,7 +33,8 @@
     }
 
     @media screen and (max-width: 360px) {
-          width: 140px;
+      width: 140px;
+      margin-top: 12px;
     }
   }
 
@@ -42,29 +44,9 @@
     font-size: 13px;
     color: #000000;
     line-height: 17px;
-  }
-
-}
-
-
-div:first-child > .list-floor{
-  margin-top: 0px;
     @media screen and (max-width: 360px) {
-      height: 37px;
+      margin-top: 3px;
     }
-}
-
-.list-floor{
-  margin-top: 20px;
-  font-family: HelveticaNeue-Bold;
-  font-size: 11px;
-  color: #858E98;
-  letter-spacing: 0.4px;
-  @media screen and (max-width: 360px) {
-    background: #E9ECEF;
-    position: relative;
-    z-index: 1;
-    height: 45px;
-    margin-top: 0px;
   }
+
 }

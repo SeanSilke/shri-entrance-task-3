@@ -4,4 +4,8 @@
   align-self: center;
   z-index: 5;
   position: relative;
+  @media screen and (max-width: 360px) {
+      height: 59px;
+      border-bottom: 1px solid #E9ECEF;
+  }
 }
