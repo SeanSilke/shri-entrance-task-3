@@ -9,7 +9,7 @@ import ReactHoverObserver from 'react-hover-observer';
 
 const Meeting = ({dateStart,dateEnd}) => <div
   style={{
-    left:`${dateStart}px`,
+    left:`${(dateStart/DIAGRAM_LENGTH)*100}%`,
     width:`${(dateEnd-dateStart)*100/DIAGRAM_LENGTH}%`
   }}
   className='timeLine-slot-occupied'
@@ -20,8 +20,8 @@ const FreeSlots = ({dateStart,dateEnd, setHovering}) => <ReactHoverObserver
 >
   <div
      style={{
-       left:`${dateStart}px`,
-        width:`${dateEnd-dateStart}px`
+       left:`${(dateStart/DIAGRAM_LENGTH)*100}%`,
+        width:`${(dateEnd-dateStart)*100/DIAGRAM_LENGTH}%`
       }}
      className='timeLine-slot-free'
    />

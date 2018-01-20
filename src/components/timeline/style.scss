@@ -2,15 +2,21 @@
   display: inline-flex;
   align-items: center;
   position: relative;
-  @media screen and (max-width: 360px) {
+  width: calc(100vw - 245px);
+  @media screen and (max-width: 640px) {
     padding-left: 181px;
+    width: 1056px;
+    flex:0 0 1056px;
   }
   &-hour{
     font-family: HelveticaNeue-Bold;
     font-size: 11px;
     color: #858E98;
     letter-spacing: 0.4px;
-    width: 66px;
+    width: 6.25%;
+    @media screen and (max-width: 640px) {
+        flex:0 0 66px;
+    }
     text-align: center;
     position: relative;
     &-line{
@@ -21,7 +27,7 @@
       height: 1000px;
       background: rgba(19,100,205,0.10);
       z-index: 10;
-      @media screen and (max-width: 360px) {
+      @media screen and (max-width: 640px) {
           top: 22px;
       }
     }
@@ -31,26 +37,29 @@
 
 .App-timeline-currtime{
   position: absolute;
-  left: 25%;
-  font-family: HelveticaNeue-Bold;
-  font-size: 11px;
-  line-height: 20px;
-  text-align: center;
-  color: #FFFFFF;
-  letter-spacing: 0.4px;
-  width: 49px;
-  height: 20px;
+  top: 20px;
+  left: 50%;
+  width: 1px;
+  height: 1000px;
   background: #007DFF;
-  border-radius: 100px;
   z-index: 10;
-  &-line{
+  &-data{
     position: absolute;
-    top: 20px;
-    left: 50%;
-    width: 1px;
-    height: 1000px;
+    left: -23px;
+    top: -7px;
+    @media screen and (max-width: 640px) {
+        top: -13px;
+    }
+    font-family: HelveticaNeue-Bold;
+    font-size: 11px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    letter-spacing: 0.4px;
+    width: 49px;
+    height: 20px;
     background: #007DFF;
+    border-radius: 100px;
     z-index: 10;
-
   }
 }

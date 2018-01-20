@@ -1,6 +1,6 @@
 div:first-child > .list-floorName{
   margin-top: 0px;
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: 640px) {
       height: 37px;
     }
 }
@@ -11,7 +11,7 @@ div:first-child > .list-floorName{
   font-size: 11px;
   color: #858E98;
   letter-spacing: 0.4px;
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 640px) {
     background: #E9ECEF;
     position: relative;
     z-index: 1;

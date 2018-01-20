@@ -2,7 +2,7 @@
   padding-left: 25px;
   padding-top: 22px;
   margin-top: 117px;
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 640px) {
     margin-top: 137px;
     padding-left: 0px;
     padding-top: 0px;
@@ -17,7 +17,7 @@
     height: 100%;
     background: #F6F7F9;
     left: 245px;
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: 640px) {
       left: 181px;
       display: none;
     }

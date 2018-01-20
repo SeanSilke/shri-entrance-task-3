@@ -2,4 +2,7 @@
   width: 1280px;
   margin: auto;
   overflow: hidden;
+  @media screen and (max-width: 640px) {
+    width:1237px;
+  }
 }

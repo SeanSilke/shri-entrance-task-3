@@ -107,6 +107,10 @@ export const floors = {
 
 export const schedule = [
   {
+    dateStart: 0,
+    dateEnd: 50,
+  },
+  {
     dateStart: 90,
     dateEnd: 200
   },

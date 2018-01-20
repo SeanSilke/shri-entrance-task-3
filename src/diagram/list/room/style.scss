@@ -3,7 +3,7 @@
   height: 44px;
   margin-top: 4px;
   margin-bottom: 4px;
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 640px) {
     margin: 0px;
     background: #FFFFFF;
     height: 58px;
@@ -12,7 +12,7 @@
   &-description{
     flex: 0 0 220px;
     position: relative;
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: 640px) {
       flex: 0 0 181px;
       padding-left: 16px;
       border-right: 1px solid #E9ECEF;
@@ -33,7 +33,7 @@
       color: #0070E0;
     }
 
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: 640px) {
       width: 140px;
       margin-top: 12px;
     }
@@ -55,6 +55,9 @@
        &.hidden{
          opacity: 0;
        }
+       @media screen and (min-width: 640px) {
+         display: none;
+       }
     }
   }
 
@@ -64,7 +67,7 @@
     font-size: 13px;
     color: #000000;
     line-height: 17px;
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: 640px) {
       margin-top: 3px;
     }
   }

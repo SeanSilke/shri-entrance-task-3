@@ -26,8 +26,7 @@ export class Timeline extends PureComponent {
       ref={(ref) => { this.ref = ref; } }
     >
       <div className='App-timeline-currtime'>
-          11:05
-          <div className='App-timeline-currtime-line'/>
+        <div className='App-timeline-currtime-data'> 11:05 </div>
       </div>
       {HOURS_RANGE.map(id =>
         <div className='App-timeline-hour' key={id}>
