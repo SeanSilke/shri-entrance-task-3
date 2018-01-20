@@ -1,5 +1,6 @@
 import React, {PureComponent} from 'react'
 import {Timeline} from '../time-line'
+import {NameSwipe} from './name-swipe'
 import './style.css'
 
 export class Room extends PureComponent {
@@ -15,6 +16,7 @@ export class Room extends PureComponent {
     const {isHovering} = this.state
     return <div className='meetingroom'>
       <div className='meetingroom-description'>
+        <NameSwipe title={title}/>
         <div className={`meetingroom-name ${isHovering?'meetingroom-name-hover':''}`}>{title}</div>
         <div className='meetingroom-capacity'>{capacity}</div>
       </div>

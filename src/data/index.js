@@ -49,6 +49,60 @@ export const floors = {
       id:9
     },
   ],
+  5: [
+    {
+      title:'Джокер',
+      capacity:'3—6 человек',
+      id:5
+    },
+    {
+      title: 'Мариванна',
+      capacity:'3—6 человек',
+      id:6
+    },
+    {
+      title: 'Тонкий Боб',
+      capacity:'3—6 человек',
+      id:7
+    },
+    {
+      title: 'Чёрная вдова',
+      capacity:'3—6 человек',
+      id:8
+    },
+    {
+      title: 'Белорусский ликёр',
+      capacity:'3—6 человек',
+      id:9
+    },
+  ],
+  4: [
+    {
+      title:'Джокер',
+      capacity:'3—6 человек',
+      id:5
+    },
+    {
+      title: 'Мариванна',
+      capacity:'3—6 человек',
+      id:6
+    },
+    {
+      title: 'Тонкий Боб',
+      capacity:'3—6 человек',
+      id:7
+    },
+    {
+      title: 'Чёрная вдова',
+      capacity:'3—6 человек',
+      id:8
+    },
+    {
+      title: 'Белорусский ликёр',
+      capacity:'3—6 человек',
+      id:9
+    },
+  ],
 }
 
 export const schedule = [

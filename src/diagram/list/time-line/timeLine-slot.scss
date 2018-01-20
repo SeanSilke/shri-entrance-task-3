@@ -1,5 +1,6 @@
 .timeLine-slot{
   &-free{
+    cursor: pointer;
     position: absolute;
     background: #FFFFFF;
     height: 100%;
@@ -23,6 +24,7 @@
     }
   }
   &-occupied{
+    cursor: pointer;
     position: absolute;
     background: #D5DFE9;
     height: 100%;

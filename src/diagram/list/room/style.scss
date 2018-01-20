@@ -6,11 +6,12 @@
   @media screen and (max-width: 360px) {
     margin: 0px;
     background: #FFFFFF;
-    height: 59px;
-    border-bottom: 1px solid #E9ECEF;
+    height: 58px;
+    border-bottom: 2px solid #E9ECEF;
   }
   &-description{
     flex: 0 0 220px;
+    position: relative;
     @media screen and (max-width: 360px) {
       flex: 0 0 181px;
       padding-left: 16px;
@@ -35,6 +36,25 @@
     @media screen and (max-width: 360px) {
       width: 140px;
       margin-top: 12px;
+    }
+    &-swipe {
+      background: #FFFFFF;
+      box-shadow: 0 1px 8px 0 rgba(0,44,92,0.28);
+      border-radius: 4px;
+      position: absolute;
+      font-family: HelveticaNeue-Bold;
+      font-size: 11px;
+      color: #262626;
+      letter-spacing: 0.4px;
+      padding: 8px;
+      padding-top: 5px;
+      padding-bottom: 6px;
+      z-index: 6;
+      opacity: 1;
+      transition: all 0.2s ease-out;
+       &.hidden{
+         opacity: 0;
+       }
     }
   }
 

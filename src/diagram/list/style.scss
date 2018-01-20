@@ -3,7 +3,7 @@
   padding-top: 22px;
   margin-top: 117px;
   @media screen and (max-width: 360px) {
-    margin-top: 0px;
+    margin-top: 137px;
     padding-left: 0px;
     padding-top: 0px;
   }
@@ -19,32 +19,8 @@
     left: 245px;
     @media screen and (max-width: 360px) {
       left: 181px;
+      display: none;
     }
     top: 0px;
-  }
-}
-
-
-div:first-child > .list-floor{
-  margin-top: 0px;
-    @media screen and (max-width: 360px) {
-      height: 37px;
-    }
-}
-
-.list-floor{
-  margin-top: 20px;
-  font-family: HelveticaNeue-Bold;
-  font-size: 11px;
-  color: #858E98;
-  letter-spacing: 0.4px;
-  @media screen and (max-width: 360px) {
-    background: #E9ECEF;
-    position: relative;
-    z-index: 1;
-    height: 45px;
-    margin-top: 0px;
-    padding-left: 16px;
-    padding-top: 16px;
   }
 }
