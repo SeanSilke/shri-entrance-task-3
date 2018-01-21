@@ -25,7 +25,10 @@ export class Flor extends PureComponent {
     const {id,rooms = []} = this.props;
     return  <div>
       <div className='list-floorName'>
-        <div ref={(ref) => { this.ref = ref; }}>
+        <div
+          style={{display: 'inline-block'}}
+          ref={(ref) => { this.ref = ref; }}
+        >
           {id} ЭТАЖ
         </div>
       </div>
