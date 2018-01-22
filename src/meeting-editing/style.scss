@@ -10,6 +10,7 @@ $footer-height-mobile: 77px;
   margin: 0 auto;
   padding-top: #{$header-height + 31px};
   width: 872px;
+  min-width: 320px;
   min-height: calc(100vh - #{ $footer-height +$row-botom-margin});
   @media screen and (max-width: 890px) {
     display: flex;

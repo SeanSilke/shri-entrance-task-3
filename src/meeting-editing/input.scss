@@ -28,11 +28,10 @@
     color: #858E98;
   }
 
-}
-
-.editing-input-title , .editing-rooms-title {
-  font-family: HelveticaNeue-Bold;
-  font-size: 13px;
-  color: #000000;
-  margin-bottom: 4px;
+  &-title{
+    font-family: HelveticaNeue-Bold;
+    font-size: 13px;
+    color: #000000;
+    margin-bottom: 4px;
+  }
 }
