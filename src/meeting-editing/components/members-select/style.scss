@@ -1,11 +1,21 @@
 .multi-select{
+  width: 420px;
+  @media screen and (max-width: 640px) {
+      width: 100%;
+  }
+  position: relative;
   &-dropdown{
-      width: 420px;
+      position: absolute;
+      width: 100%;
       background: #FFFFFF;
       box-shadow: 0 1px 10px 0 rgba(0,44,92,0.28);
       border-radius: 4px;
       max-height: 136px;
+      @media screen and (max-width: 640px) {
+        max-height: 128px;
+      }
       overflow-x: scroll;
+      z-index: 1;
   }
   &-option{
     display: flex;
@@ -34,5 +44,9 @@
     height: 24px;
     border-radius: 100%;
     background-color: #afc8e2;
+    @media screen and (max-width: 640px) {
+      width: 32px;
+      height: 32px;
+    }
   }
 }

@@ -1,9 +1,11 @@
 .multi-select{
   &-selected{
-    width: 420px;
     padding-top: 4px;
     display: flex;
     flex-wrap:wrap;
+    @media screen and (max-width: 640px) {
+      padding-top: 2px;
+    }
   }
 
   &-item{
@@ -24,6 +26,11 @@
     &:hover .multi-select-remove{
         background: #000000;
     }
+
+    @media screen and (max-width: 640px) {
+      width: 100%;
+      position: relative;
+    }
   }
 
   &-remove{
@@ -38,5 +45,9 @@
     mask-position: center;
     mask-image: url('../../../../../assets/close.svg');
     background: #AFB4B8;
+    @media screen and (max-width: 640px) {
+      position: absolute;
+      right: 0px;
+    }
   }
 }
