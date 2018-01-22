@@ -5,11 +5,16 @@
   padding-left: 10px;
   height: 38px;
   line-height: 38px;
-  width: 420px;
+  width: 100%;
   font-family: HelveticaNeue;
   font-size: 13px;
   color: #000000;
   letter-spacing: 0.47px;
+  @media screen and (max-width: 640px) {
+    height: 44px;
+    line-height: 44px;
+    font-size: 15px;
+  }
   &:hover{
     border-color: #007DFF;
   }
