@@ -9,6 +9,7 @@
     @media screen and (max-width: 640px) {
         width: 100%;
         margin-right: 0px;
+        margin-bottom: 8px;
     }
   }
   &-input-time{
@@ -18,12 +19,16 @@
     }
   }
   &-dash{
-    font-family: HelveticaNeue-Bold;
-    font-size: 13px;
-    color: #000000;
-    letter-spacing: 0.47px;
-    margin-top: 29px;
     margin-left: 4px;
     margin-right: 4px;
+    &>span{
+      font-family: HelveticaNeue-Bold;
+      font-size: 13px;
+      color: #000000;
+      line-height: 38px;
+      @media screen and (max-width: 640px) {
+        line-height: 44px;
+      }
+    }
   }
 }

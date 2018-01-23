@@ -2,6 +2,7 @@ $header-height: 72px;
 $header-height-mobile: 48px;
 
 $row-botom-margin: 24px;
+$row-botom-margin-mobile: 16px;
 
 $footer-height: 77px;
 $footer-height-mobile: 77px;
@@ -20,7 +21,6 @@ $footer-height-mobile: 77px;
     min-height: calc(100vh - #{ $footer-height +$row-botom-margin} + 24px);
   }
   @media screen and (max-width: 640px) {
-    padding: 0px 16px;
     padding-top: #{$header-height-mobile + 24px};
     position: absolute;
     padding-bottom: $footer-height-mobile;
@@ -34,10 +34,7 @@ $footer-height-mobile: 77px;
   border-radius: 100px;
   background-repeat:no-repeat;
   background-position: center;
-  background-image: url('../assets/close.svg');
-  @media screen and (max-width: 640px) {
-    display: none;
-  }
+  background-image: url('../../assets/close.svg');
 }
 
 .editing-header-title{
@@ -52,6 +49,15 @@ $footer-height-mobile: 77px;
   flex-grow: 100%;
   @media screen and (max-width: 890px) {
     flex-direction:  column;
+    margin-bottom: $row-botom-margin-mobile;
+  }
+  @media screen and (max-width: 640px){
+    margin-bottom: 0px;
+    width: 100%;
+    padding: 0px 16px;
+    padding-bottom: 20px;
+    padding-top: 16px;
+    border-bottom: 8px solid #E9ECEF;
   }
   justify-content: space-between;
   margin-bottom: $row-botom-margin;
@@ -63,16 +69,15 @@ $footer-height-mobile: 77px;
       margin-bottom: 16px;
       @media screen and (max-width: 640px) {
         width: 100%;
+        border-bottom: 0px;
+        padding: 0px 16px;
       }
     }
   }
-  &:not(:nth-child(1)) > div:nth-child(1) {
-    padding-bottom: 20px;
-  }
-
-  @media screen and (max-width: 640px) {
-    margin-bottom: 16px;
-    width: 100%;
+  &:nth-child(2){
+    @media screen and (max-width: 640px) {
+      padding-top: 0px;
+    }
   }
 }
 

@@ -1,7 +1,8 @@
 import React, {Fragment} from 'react'
 import {Header} from '../components/header'
-import './style.css'
-import './input.css'
+import './style/style.css'
+import './style/input.css'
+import './style/responsive.css'
 import {Timepicker} from './components/timepicker'
 import {MembersSelect} from './components/members-select'
 import {RoomSelect , RoomRecommended} from './components/room-select'
@@ -15,7 +16,7 @@ export const Editing = () => <Fragment>
 
     <div className='row'>
       <div className='editing-header-title'> Новая встреча </div>
-      <div className="exit-button"> </div>
+      <div className="exit-button hidden-mobile"> </div>
     </div>
 
     <div className='row'>
@@ -25,6 +26,7 @@ export const Editing = () => <Fragment>
 
     <div className='row'>
       <MembersSelect/>
+      <div class='mobile-divider'></div>
       <RoomSelect/>
       {/* <RoomRecommended/> */}
     </div>
