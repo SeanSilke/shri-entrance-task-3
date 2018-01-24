@@ -16,7 +16,7 @@ export const Editing = () => <Fragment>
 
     <div className='row'>
       <div className='editing-header-title'> Новая встреча </div>
-      <div className="exit-button hidden-mobile"> </div>
+      <div className="editing-exit-button hidden-mobile"> </div>
     </div>
 
     <div className='row'>

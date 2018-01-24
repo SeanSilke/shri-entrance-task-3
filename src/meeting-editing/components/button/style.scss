@@ -9,6 +9,10 @@
   background: #E9ECEF;
   border-radius: 4px;
   margin-left: 16px;
+  @media screen and (max-width: 640px) {
+    height: 44px;
+    line-height: 44px;
+  }
   &:first-child {
     margin-left: 0px;
   }
