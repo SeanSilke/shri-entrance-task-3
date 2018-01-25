@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Diagram } from "./diagram";
-import { Editing } from "./meeting-editing";
+import { EditingWithData } from "./meeting-editing";
 import "./app.css";
 
 class App extends Component {
@@ -10,7 +10,7 @@ class App extends Component {
       <Router>
         <div className="App">
           <Route path="/diagram" component={Diagram} />
-          <Route path="/editing" component={Editing} />
+          <Route path="/editing" component={EditingWithData} />
         </div>
       </Router>
     );
