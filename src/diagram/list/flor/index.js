@@ -1,6 +1,6 @@
 import React, {PureComponent} from 'react'
 import './style.css'
-import {Room} from '../room'
+import Room from '../room'
 import debounce from 'lodash/debounce'
 import {getHorizontalShift} from '../../../helpers'
 

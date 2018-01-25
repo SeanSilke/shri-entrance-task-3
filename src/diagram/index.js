@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react'
-import {List} from './list'
+import List from './list'
 import {Header} from '../components/header'
 import {Button} from '../components/button';
 import {TimePanel} from '../components/time-panel'
