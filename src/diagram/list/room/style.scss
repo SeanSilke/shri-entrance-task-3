@@ -1,25 +1,25 @@
-.meetingroom{
+.meetingroom {
   display: flex;
   height: 44px;
   margin-top: 4px;
   margin-bottom: 4px;
   @media screen and (max-width: 640px) {
     margin: 0px;
-    background: #FFFFFF;
+    background: #ffffff;
     height: 58px;
-    border-bottom: 2px solid #E9ECEF;
+    border-bottom: 2px solid #e9ecef;
   }
-  &-description{
+  &-description {
     flex: 0 0 220px;
     position: relative;
     @media screen and (max-width: 640px) {
       flex: 0 0 181px;
       padding-left: 16px;
-      border-right: 1px solid #E9ECEF;
+      border-right: 1px solid #e9ecef;
     }
   }
 
-  &-name{
+  &-name {
     margin-top: 4px;
     font-family: HelveticaNeue-Medium;
     font-size: 15px;
@@ -28,9 +28,9 @@
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    &#{&}-hover{
+    &#{&}-hover {
       font-family: HelveticaNeue-Bold;
-      color: #0070E0;
+      color: #0070e0;
     }
 
     @media screen and (max-width: 640px) {
@@ -38,8 +38,8 @@
       margin-top: 12px;
     }
     &-swipe {
-      background: #FFFFFF;
-      box-shadow: 0 1px 8px 0 rgba(0,44,92,0.28);
+      background: #ffffff;
+      box-shadow: 0 1px 8px 0 rgba(0, 44, 92, 0.28);
       border-radius: 4px;
       position: absolute;
       font-family: HelveticaNeue-Bold;
@@ -52,16 +52,16 @@
       z-index: 6;
       opacity: 1;
       transition: all 0.2s ease-out;
-       &.hidden{
-         opacity: 0;
-       }
-       @media screen and (min-width: 640px) {
-         display: none;
-       }
+      &.hidden {
+        opacity: 0;
+      }
+      @media screen and (min-width: 640px) {
+        display: none;
+      }
     }
   }
 
-  &-capacity{
+  &-capacity {
     margin-top: 2px;
     font-family: HelveticaNeue;
     font-size: 13px;
@@ -71,5 +71,4 @@
       margin-top: 3px;
     }
   }
-
 }

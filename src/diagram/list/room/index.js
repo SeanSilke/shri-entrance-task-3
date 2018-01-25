@@ -1,26 +1,33 @@
-import React, {PureComponent} from 'react'
-import {Timeline} from '../time-line'
-import {NameSwipe} from './name-swipe'
-import './style.css'
+import React, { PureComponent } from "react";
+import { Timeline } from "../time-line";
+import { NameSwipe } from "./name-swipe";
+import "./style.css";
 
 export class Room extends PureComponent {
-
   state = {
     isHovering: false
-  }
+  };
 
-  setHovering = ({isHovering}) => this.setState({isHovering})
+  setHovering = ({ isHovering }) => this.setState({ isHovering });
 
-  render(){
-    const {title, capacity} = this.props;
-    const {isHovering} = this.state
-    return <div className='meetingroom'>
-      <div className='meetingroom-description'>
-        <NameSwipe title={title}/>
-        <div className={`meetingroom-name ${isHovering?'meetingroom-name-hover':''}`}>{title}</div>
-        <div className='meetingroom-capacity'>{capacity}</div>
+  render() {
+    const { title, capacity } = this.props;
+    const { isHovering } = this.state;
+    return (
+      <div className="meetingroom">
+        <div className="meetingroom-description">
+          <NameSwipe title={title} />
+          <div
+            className={`meetingroom-name ${
+              isHovering ? "meetingroom-name-hover" : ""
+            }`}
+          >
+            {title}
+          </div>
+          <div className="meetingroom-capacity">{capacity}</div>
+        </div>
+        <Timeline setHovering={this.setHovering} />
       </div>
-        <Timeline setHovering={this.setHovering}/>
-    </div>
+    );
   }
 }

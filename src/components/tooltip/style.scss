@@ -1,4 +1,4 @@
-.App-tooltip{
+.App-tooltip {
   position: fixed;
   padding-left: 16px;
   padding-top: 16px;
@@ -6,11 +6,11 @@
   left: 400px;
   height: 115px;
   width: 338px;
-  background: #FFFFFF;
-  box-shadow: 0 1px 16px 0 rgba(0,44,92,0.28);
+  background: #ffffff;
+  box-shadow: 0 1px 16px 0 rgba(0, 44, 92, 0.28);
   border-radius: 8px;
   z-index: 30;
-  &::before{
+  &::before {
     bottom: 100%;
     left: 50%;
     border: solid transparent;
@@ -24,20 +24,20 @@
   }
 }
 
-.App-tooltip-button{
+.App-tooltip-button {
   position: absolute;
   right: 8px;
   top: 8px;
   width: 24px;
   height: 24px;
-  background: #E9ECEF;
+  background: #e9ecef;
   border-radius: 100px;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-position: center;
-  background-image: url('../../assets/edit.svg');
+  background-image: url("../../assets/edit.svg");
 }
 
-.tooltip-header{
+.tooltip-header {
   font-family: HelveticaNeue-Bold;
   font-size: 15px;
   color: #000000;
@@ -54,29 +54,29 @@
   line-height: 17px;
 }
 
-.tooltip-participants{
+.tooltip-participants {
   margin-top: 16px;
   display: flex;
   align-items: center;
   font-family: Helvetica;
   font-size: 13px;
-  color: #37003E;
+  color: #37003e;
   letter-spacing: 0;
   line-height: 17px;
-  &-main{
+  &-main {
     color: #000000;
   }
 }
 
-.tooltip-participants-main{
+.tooltip-participants-main {
   display: flex;
-  align-items:center;
-  & .icon{
+  align-items: center;
+  & .icon {
     margin-right: 8px;
   }
 }
 
-.icon{
+.icon {
   width: 24px;
   height: 24px;
   border-radius: 50%;

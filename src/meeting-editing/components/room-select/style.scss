@@ -1,31 +1,30 @@
-.editing-room{
-  &-selected{
-    background: #007DFF;
-    &:active{
-      background:
-        linear-gradient(rgba(11,0,255,0.80), rgba(11,0,255,0.80)),
-        linear-gradient(#0059FF, #0059FF) ;
+.editing-room {
+  &-selected {
+    background: #007dff;
+    &:active {
+      background: linear-gradient(rgba(11, 0, 255, 0.8), rgba(11, 0, 255, 0.8)),
+        linear-gradient(#0059ff, #0059ff);
     }
-    &  > span {
-      color: #FFFFFF;
+    & > span {
+      color: #ffffff;
     }
   }
-  &-recommended{
-    background: #E9ECEF;
+  &-recommended {
+    background: #e9ecef;
     margin-bottom: 8px;
-    &:hover{
-      background: #98A9B9;
+    &:hover {
+      background: #98a9b9;
     }
-    &:active{
-      background:
-        linear-gradient(rgba(0,0,0,0.12), rgba(0,0,0,0.12)),
-        linear-gradient(#98A9B9, #98A9B9) ;
+    &:active {
+      background: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)),
+        linear-gradient(#98a9b9, #98a9b9);
     }
-    &  > span {
+    & > span {
       color: #000000;
     }
   }
-  &-selected, &-recommended{
+  &-selected,
+  &-recommended {
     position: relative;
     border-radius: 4px;
     padding-left: 10px;
@@ -38,13 +37,13 @@
       line-height: 44px;
       font-size: 15px;
     }
-    &  > span {
+    & > span {
       font-family: HelveticaNeue;
       font-size: 13px;
       letter-spacing: 0;
       line-height: 17px;
-      user-select:none;
-      &:first-of-type{
+      user-select: none;
+      &:first-of-type {
         font-family: HelveticaNeue-Bold;
         margin-right: 16px;
         @media screen and (max-width: 640px) {
@@ -53,22 +52,22 @@
       }
     }
   }
-  &-cancelButton{
+  &-cancelButton {
     width: 44px;
     height: 44px;
-    mask-repeat:no-repeat;
+    mask-repeat: no-repeat;
     mask-position: center;
     position: absolute;
-    top:0px;
+    top: 0px;
     right: 2px;
-    mask-image: url('../../../assets/close.svg');
+    mask-image: url("../../../assets/close.svg");
     background-color: #ffffff;
-    &:hover{
+    &:hover {
       background: #000000;
     }
   }
 
-  &-request{
+  &-request {
     @media screen and (min-width: 640px) {
       display: none;
     }
@@ -77,9 +76,9 @@
     left: 0px;
     font-family: HelveticaNeue-Bold;
     font-size: 15px;
-    color: #FFFFFF;
+    color: #ffffff;
     opacity: 0.83;
-    background: rgba(0,16,33,0.80);
+    background: rgba(0, 16, 33, 0.8);
     width: 100%;
     height: 43px;
     padding: 12px;

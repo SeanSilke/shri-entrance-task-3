@@ -1,4 +1,4 @@
-.App-timeline{
+.App-timeline {
   display: inline-flex;
   align-items: center;
   position: relative;
@@ -6,59 +6,58 @@
   @media screen and (max-width: 640px) {
     padding-left: 181px;
     width: 1056px;
-    flex:0 0 1056px;
+    flex: 0 0 1056px;
   }
-  &-hour{
+  &-hour {
     font-family: HelveticaNeue-Bold;
     font-size: 11px;
-    color: #858E98;
+    color: #858e98;
     letter-spacing: 0.4px;
     width: 6.25%;
     @media screen and (max-width: 640px) {
-        flex:0 0 66px;
+      flex: 0 0 66px;
     }
     text-align: center;
     position: relative;
-    &-line{
+    &-line {
       position: absolute;
       top: 28px;
       left: 50%;
       width: 1px;
       height: 1000px;
-      background: rgba(19,100,205,0.10);
+      background: rgba(19, 100, 205, 0.1);
       z-index: 10;
       @media screen and (max-width: 640px) {
-          top: 22px;
+        top: 22px;
       }
     }
   }
 }
 
-
-.App-timeline-currtime{
+.App-timeline-currtime {
   position: absolute;
   top: 20px;
   left: 50%;
   width: 1px;
   height: 1000px;
-  background: #007DFF;
+  background: #007dff;
   z-index: 10;
-  &-data{
+  &-data {
     position: absolute;
     left: -23px;
     top: -7px;
     @media screen and (max-width: 640px) {
-        top: -13px;
+      top: -13px;
     }
     font-family: HelveticaNeue-Bold;
     font-size: 11px;
     line-height: 20px;
     text-align: center;
-    color: #FFFFFF;
+    color: #ffffff;
     letter-spacing: 0.4px;
     width: 49px;
     height: 20px;
-    background: #007DFF;
+    background: #007dff;
     border-radius: 100px;
     z-index: 10;
   }

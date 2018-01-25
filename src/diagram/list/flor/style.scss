@@ -1,18 +1,18 @@
-div:first-child > .list-floorName{
+div:first-child > .list-floorName {
   margin-top: 0px;
-    @media screen and (max-width: 640px) {
-      height: 37px;
-    }
+  @media screen and (max-width: 640px) {
+    height: 37px;
+  }
 }
 
-.list-floorName{
+.list-floorName {
   margin-top: 20px;
   font-family: HelveticaNeue-Bold;
   font-size: 11px;
-  color: #858E98;
+  color: #858e98;
   letter-spacing: 0.4px;
   @media screen and (max-width: 640px) {
-    background: #E9ECEF;
+    background: #e9ecef;
     position: relative;
     z-index: 1;
     height: 45px;
@@ -20,7 +20,7 @@ div:first-child > .list-floorName{
     padding-left: 16px;
     padding-top: 16px;
   }
-  &>div {
+  & > div {
     transition: all 0.1s ease-out;
   }
 }

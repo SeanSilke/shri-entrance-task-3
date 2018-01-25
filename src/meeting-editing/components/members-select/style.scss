@@ -1,27 +1,27 @@
-.multi-select{
+.multi-select {
   width: 420px;
   @media screen and (max-width: 640px) {
-      width: 100%;
-      padding-bottom: 20px;
+    width: 100%;
+    padding-bottom: 20px;
   }
   @media screen and (max-width: 890px) {
-      padding-bottom: 16px;
+    padding-bottom: 16px;
   }
   position: relative;
-  &-dropdown{
-      position: absolute;
-      width: 100%;
-      background: #FFFFFF;
-      box-shadow: 0 1px 10px 0 rgba(0,44,92,0.28);
-      border-radius: 4px;
-      max-height: 136px;
-      @media screen and (max-width: 640px) {
-        max-height: 128px;
-      }
-      overflow-x: scroll;
-      z-index: 1;
+  &-dropdown {
+    position: absolute;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 1px 10px 0 rgba(0, 44, 92, 0.28);
+    border-radius: 4px;
+    max-height: 136px;
+    @media screen and (max-width: 640px) {
+      max-height: 128px;
+    }
+    overflow-x: scroll;
+    z-index: 1;
   }
-  &-option{
+  &-option {
     display: flex;
     align-items: center;
     padding: 5px 16px;
@@ -29,22 +29,22 @@
     font-size: 13px;
 
     letter-spacing: 0;
-    & > span{
-      color: #858E98;
-      &:first-of-type{
+    & > span {
+      color: #858e98;
+      &:first-of-type {
         margin-left: 8px;
         color: #000000;
       }
     }
-    &:hover{
-      background: #F6F7F9;
-      & > span{
-        font-family:HelveticaNeue-Bold;
+    &:hover {
+      background: #f6f7f9;
+      & > span {
+        font-family: HelveticaNeue-Bold;
       }
     }
   }
-  &-userpic{
-    width:24px;
+  &-userpic {
+    width: 24px;
     height: 24px;
     border-radius: 100%;
     background-color: #afc8e2;
