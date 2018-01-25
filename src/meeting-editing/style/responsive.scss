@@ -1,24 +1,24 @@
-.mobile-divider{
+.mobile-divider {
   display: none;
   @media screen and (max-width: 640px) {
     display: block;
     width: calc(100% + 16px + 16px);
     height: 8px;
-    background: #E9ECEF;
+    background: #e9ecef;
     position: relative;
     left: -16px;
     margin-bottom: 16px;
   }
 }
 
-.hidden-mobile{
+.hidden-mobile {
   @media screen and (max-width: 640px) {
     display: none;
   }
 }
 
-.visible-mobile{
+.visible-mobile {
   @media screen and (min-width: 640px) {
-      display: none;
+    display: none;
   }
 }

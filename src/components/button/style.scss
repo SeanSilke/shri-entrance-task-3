@@ -1,24 +1,23 @@
-.App-button{
+.App-button {
   width: 140px;
   height: 36px;
   line-height: 36px;
   text-align: center;
-  background: #007DFF;
+  background: #007dff;
   border-radius: 4px;
   font-family: HelveticaNeue-Medium;
   font-size: 13px;
-  color: #FFFFFF;
+  color: #ffffff;
   letter-spacing: 0;
   user-select: none;
-    &:hover{
-      background: #0059FF;
-    }
-    &:active{
-      background:
-        linear-gradient(rgba(11,0,255,0.80), rgba(11,0,255,0.80)),
-        linear-gradient(#0059FF, #0059FF) ;
-    }
-    @media screen and (max-width: 640px) {
-      display: none;
-    }
+  &:hover {
+    background: #0059ff;
+  }
+  &:active {
+    background: linear-gradient(rgba(11, 0, 255, 0.8), rgba(11, 0, 255, 0.8)),
+      linear-gradient(#0059ff, #0059ff);
+  }
+  @media screen and (max-width: 640px) {
+    display: none;
+  }
 }

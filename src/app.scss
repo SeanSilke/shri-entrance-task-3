@@ -1,9 +1,9 @@
-.App{
+.App {
   max-width: 1280px;
   margin: auto;
   overflow: hidden;
   @media screen and (max-width: 640px) {
-    width:1237px;
+    width: 1237px;
     // NOTE: Может понадобиться если будет скролится app, а не вьюпорт
     // overflow-x: scroll;
   }

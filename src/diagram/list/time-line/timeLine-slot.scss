@@ -1,40 +1,50 @@
-.timeLine-slot{
-  &-free{
+.timeLine-slot {
+  &-free {
     cursor: pointer;
     position: absolute;
-    background: #FFFFFF;
+    background: #ffffff;
     height: 100%;
-    &:hover{
-      background: #1D54FE;
-      &::after{
-          position: absolute;
-          top: 50%;
-          left: 50%;
-                  transform: translate(-50%, -50%);
-          content: ' ';
-          width: 12px;
-          height: 12px;
-          background:
-            linear-gradient(to bottom, transparent 5px, #FFFFFF 5px, #FFFFFF 7px,  transparent 7px),
-            linear-gradient(to right, transparent 5px, #FFFFFF 5px, #FFFFFF 7px, transparent 7px);
+    &:hover {
+      background: #1d54fe;
+      &::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        content: " ";
+        width: 12px;
+        height: 12px;
+        background: linear-gradient(
+            to bottom,
+            transparent 5px,
+            #ffffff 5px,
+            #ffffff 7px,
+            transparent 7px
+          ),
+          linear-gradient(
+            to right,
+            transparent 5px,
+            #ffffff 5px,
+            #ffffff 7px,
+            transparent 7px
+          );
       }
     }
-    &:active{
-      background: #1D00FE;
+    &:active {
+      background: #1d00fe;
     }
   }
-  &-occupied{
+  &-occupied {
     cursor: pointer;
     position: absolute;
-    background: #D5DFE9;
+    background: #d5dfe9;
     height: 100%;
-    &:hover{
-      background: #99A9B9;
+    &:hover {
+      background: #99a9b9;
     }
-    &:active{
-      background:
-        linear-gradient(rgba(0,0,0,0.12), rgba(0,0,0,0.12)),
-        linear-gradient(#98A9B9, #98A9B9) ;
+    &:active {
+      background: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)),
+        linear-gradient(#98a9b9, #98a9b9);
     }
   }
 }
