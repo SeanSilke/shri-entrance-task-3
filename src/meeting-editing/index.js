@@ -12,6 +12,19 @@ import { graphql } from "react-apollo";
 import gql from "graphql-tag";
 
 export const Editing = props => {
+  const createEvent = () =>
+    props.mutate({
+      variables: {
+        input: {
+          title: "data atab",
+          dateStart: "2018-01-25T10:48:54.554Z",
+          dateEnd: "2018-01-25T10:48:54.554Z"
+        },
+        usersIds: [1, 2, 3],
+        roomId: 2
+      }
+    });
+
   return (
     <Fragment>
       <Header key="Header" />
@@ -35,7 +48,7 @@ export const Editing = props => {
       </div>
 
       <div className="editing-bottom">
-        <Button onClick={() => props.mutate()} title="Отмена" />
+        <Button onClick={createEvent} title="Отмена" />
         <Button title="Создать встречу" />
       </div>
     </Fragment>
@@ -43,16 +56,8 @@ export const Editing = props => {
 };
 
 const createEvent = gql`
-  mutation {
-    createEvent(
-      input: {
-        title: "Some Name"
-        dateStart: "2018-01-25T10:48:54.554Z"
-        dateEnd: "2018-01-25T10:48:54.554Z"
-      }
-      usersIds: [2, 3, 4]
-      roomId: 3
-    ) {
+  mutation createEvent($input: EventInput!, $usersIds: [ID], $roomId: ID!) {
+    createEvent(input: $input, usersIds: $usersIds, roomId: $roomId) {
       id
     }
   }
