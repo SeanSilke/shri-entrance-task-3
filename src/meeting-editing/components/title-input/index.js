@@ -1,13 +1,14 @@
 import React from "react";
 import "./style.css";
 
-export const TitleInput = () => (
+export const TitleInput = ({ value, onChange }) => (
   <div className="title-input">
     <div className="editing-input-title"> Тема </div>
     <input
       className="editing-input"
-      value="О чём будете говорить?"
-      onChange={() => console.log("hi")}
+      placeholder={"О чём будете говорить?"}
+      value={value}
+      onChange={onChange}
     />
   </div>
 );
