@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, PureComponent } from "react";
 import { Header } from "../components/header";
 import "./style/style.css";
 import "./style/input.css";
@@ -11,49 +11,102 @@ import { Button } from "./components/button";
 import { graphql } from "react-apollo";
 import gql from "graphql-tag";
 
-export const Editing = props => {
-  const createEvent = () =>
-    props.mutate({
-      variables: {
-        input: {
-          title: "data atab",
-          dateStart: "2018-01-25T10:48:54.554Z",
-          dateEnd: "2018-01-25T10:48:54.554Z"
-        },
-        usersIds: [1, 2, 3],
-        roomId: 2
-      }
-    });
+export class Editing extends PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = {
+      title: ""
+    };
 
-  return (
-    <Fragment>
-      <Header key="Header" />
-      <div className="editing-main">
-        <div className="row">
-          <div className="editing-header-title"> Новая встреча </div>
-          <div className="editing-exit-button hidden-mobile"> </div>
+    this.handleTitleInput = this.handleTitleInput.bind(this);
+    this.handleTime = this.handleTime.bind(this);
+  }
+
+  dateRefs = null;
+  setDateRefs = refs => (this.dateRefs = refs);
+
+  handleTitleInput(event) {
+    this.setState({ title: event.target.value });
+  }
+
+  handleTime(dateStart) {
+    this.setState({ dateStart });
+  }
+
+  setDateStart = dateStart => this.setState({ dateStart });
+  setDateEnd = dateEnd => this.setState({ dateEnd });
+
+  createEvent = () => {
+    const { dateRef, dateStartRef, dateEndRef } = this.dateRefs;
+
+    const data = dateRef.value;
+    const startTime = dateStartRef.value;
+    const endTime = dateEndRef.value;
+
+    const dateStart = new Date(data + " " + startTime).toISOString();
+    const dateEnd = new Date(data + " " + endTime).toISOString();
+
+    return this.props
+      .mutate({
+        variables: {
+          input: {
+            title: this.state.title,
+            dateStart: dateStart,
+            dateEnd: dateEnd
+          },
+          usersIds: [1, 2, 3],
+          roomId: 2
+        }
+      })
+      .then(value => {
+        console.log(value);
+        return value;
+      })
+      .catch(err => {
+        console.log("err", err);
+      });
+  };
+
+  render() {
+    return (
+      <Fragment>
+        <Header key="Header" />
+        <div className="editing-main">
+          <div className="row">
+            <div className="editing-header-title"> Новая встреча </div>
+            <div className="editing-exit-button hidden-mobile"> </div>
+          </div>
+
+          <div className="row">
+            <TitleInput
+              value={this.state.title}
+              onChange={this.handleTitleInput}
+            />
+            <Timepicker
+              // dateStart={this.state.dateStart}
+              // dateEnd={this.state.dateEnd}
+              // setDateStart={this.setDateStart}
+              // setDateEnd={this.setDateEnd}
+              setDateRefs={this.setDateRefs}
+            />
+          </div>
+
+          <div className="row">
+            <MembersSelect />
+            <div className="mobile-divider" />
+            <RoomSelect />
+            {/* <RoomRecommended/> */}
+          </div>
         </div>
 
-        <div className="row">
-          <TitleInput />
-          <Timepicker />
+        <div className="editing-bottom">
+          <Button title="Отмена" onClick={() => console.log(this.dateRefs)} />
+          <Button onClick={this.createEvent} title="Создать встречу" />
         </div>
-
-        <div className="row">
-          <MembersSelect />
-          <div class="mobile-divider" />
-          <RoomSelect />
-          {/* <RoomRecommended/> */}
-        </div>
-      </div>
-
-      <div className="editing-bottom">
-        <Button onClick={createEvent} title="Отмена" />
-        <Button title="Создать встречу" />
-      </div>
-    </Fragment>
-  );
-};
+      </Fragment>
+    );
+  }
+}
 
 const createEvent = gql`
   mutation createEvent($input: EventInput!, $usersIds: [ID], $roomId: ID!) {
