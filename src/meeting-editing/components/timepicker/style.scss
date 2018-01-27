@@ -17,6 +17,9 @@
     @media screen and (max-width: 640px) {
       width: calc(50% - 11px);
     }
+    &::-webkit-search-cancel-button {
+      -webkit-appearance: none;
+    }
   }
   &-dash {
     margin-left: 4px;
@@ -31,4 +34,19 @@
       }
     }
   }
+}
+
+input[type="time"]::-webkit-clear-button {
+  display: none;
+}
+
+input[type="time"]::-ms-clear {
+  display: none;
+}
+input[type="date"]::-webkit-clear-button {
+  display: none;
+}
+
+input[type="date"]::-ms-clear {
+  display: none;
 }
