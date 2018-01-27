@@ -82,13 +82,7 @@ export class Editing extends PureComponent {
               value={this.state.title}
               onChange={this.handleTitleInput}
             />
-            <Timepicker
-              // dateStart={this.state.dateStart}
-              // dateEnd={this.state.dateEnd}
-              // setDateStart={this.setDateStart}
-              // setDateEnd={this.setDateEnd}
-              setDateRefs={this.setDateRefs}
-            />
+            <Timepicker setDateRefs={this.setDateRefs} />
           </div>
 
           <div className="row">
