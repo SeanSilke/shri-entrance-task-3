@@ -1,31 +1,20 @@
 import React from "react";
 import "./style.css";
 
-const data = [
-  "Лекс Лютер",
-  "ТА",
-  "ДР",
-  "Лекс Лютер",
-  "Томас Андерсон",
-  "Дарт Вейдер",
-  "Лекс Лютер",
-  "Томас Андерсон",
-  "Дарт Вейдер",
-  "Лекс",
-  "Томас Андерсон",
-  "Дарт Вейдер"
-];
+const Item = ({ login, removeSelected, id }) => {
+  return (
+    <div className="multi-select-item ">
+      <div className="multi-select-userpic" />
+      <span>{login} </span>
+      <div className="multi-select-remove" onClick={() => removeSelected(id)} />
+    </div>
+  );
+};
 
-const Item = ({ title }) => (
-  <div className="multi-select-item">
-    <div className="multi-select-userpic" />
-    <span>{title} </span>
-    <div className="multi-select-remove" />
-  </div>
-);
-
-export const Selected = () => (
+export const Selected = ({ selected, removeSelected }) => (
   <div className="multi-select-selected">
-    {data.map(name => <Item title={name} />)}
+    {selected.map(props => (
+      <Item key={props.id} {...props} removeSelected={removeSelected} />
+    ))}
   </div>
 );
