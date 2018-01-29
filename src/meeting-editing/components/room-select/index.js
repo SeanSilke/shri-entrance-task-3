@@ -1,35 +1,38 @@
-import React from "react";
+import React, { PureComponent } from "react";
 import "./style.css";
+import { SelectedRoom } from "./selected-room";
+import { RecommendedRooms } from "./recommended-rooms";
+import { selectedTime, recommendedRooms } from "../../../data";
 
-export const RoomSelect = () => (
-  <div>
-    <div className="editing-input-title">Ваша переговорка</div>
-    <div className="editing-room-selected">
-      <div className="editing-room-cancelButton"> </div>
-      <span>16:00—16:30</span>
-      <span> Готем · 4 этаж </span>
-    </div>
-  </div>
-);
+export class RoomSelect extends PureComponent {
+  state = {
+    selected: null
+  };
 
-export const RoomRecommended = () => (
-  <div>
-    <div className="editing-input-title">Рекомендованные переговорки</div>
-    <div className="editing-room-recommended">
-      <span>16:00—16:30</span>
-      <span> Готем · 4 этаж </span>
-    </div>
+  selectRoom = id => this.setState({ selected: id });
 
-    <div className="editing-room-recommended">
-      <span>16:00—16:30</span>
-      <span> Готем · 4 этаж </span>
-    </div>
+  cancel = () => this.setState({ selected: null });
 
-    <div className="editing-room-recommended">
-      <span>16:00—16:30</span>
-      <span> Готем · 4 этаж </span>
-    </div>
+  render() {
+    const { selected } = this.state;
 
-    <div className="editing-room-request">Выберите переговорку</div>
-  </div>
-);
+    if (selected === null) {
+      return (
+        <RecommendedRooms
+          timeInterval={selectedTime}
+          data={recommendedRooms}
+          selectRoom={this.selectRoom}
+        />
+      );
+    }
+
+    return (
+      <SelectedRoom
+        cancel={this.cancel}
+        timeInterval={selectedTime}
+        data={recommendedRooms}
+        selected={selected}
+      />
+    );
+  }
+}
