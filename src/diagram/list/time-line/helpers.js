@@ -3,7 +3,7 @@ import { END_DATA, START_DATA } from "../../../data/constants";
 export const getFreeSlots = data => {
   let lastElement = data[data.length - 1];
   const last = {
-    dateStart: lastElement.dateStart,
+    dateStart: lastElement.dateEnd,
     dateEnd: END_DATA
   };
 
