@@ -1,6 +1,8 @@
 import React from "react";
 import "./style.css";
 
-export const Button = ({ title }) => (
-  <div className="editing-button">{title}</div>
+export const Button = ({ title, ...rest }) => (
+  <div className="editing-button" {...rest}>
+    {title}
+  </div>
 );
