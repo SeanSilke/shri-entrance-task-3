@@ -1,6 +1,6 @@
 .editing-input {
-  background: #FFFFFF;
-  border: 2px solid #E9ECEF;
+  background: #ffffff;
+  border: 2px solid #e9ecef;
   border-radius: 4px;
   padding-left: 10px;
   height: 38px;
@@ -15,20 +15,20 @@
     line-height: 44px;
     font-size: 15px;
   }
-  &:hover{
-    border-color: #007DFF;
+  &:hover {
+    border-color: #007dff;
   }
-  &:focus{
+  &:focus {
     outline: none;
   }
-  &:active{
+  &:active {
     outline: none;
   }
-  &::placeholder{
-    color: #858E98;
+  &::placeholder {
+    color: #858e98;
   }
 
-  &-title{
+  &-title {
     font-family: HelveticaNeue-Bold;
     font-size: 13px;
     color: #000000;
