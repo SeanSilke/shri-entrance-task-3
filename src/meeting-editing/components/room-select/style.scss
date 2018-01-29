@@ -52,6 +52,9 @@
       }
     }
   }
+  &-recommended {
+    cursor: pointer;
+  }
   &-cancelButton {
     width: 37px;
     height: 37px;
@@ -62,6 +65,7 @@
     right: 2px;
     mask-image: url("../../../assets/close.svg");
     background-color: #ffffff;
+    cursor: pointer;
     @media screen and (max-width: 640px) {
       width: 44px;
       height: 44px;

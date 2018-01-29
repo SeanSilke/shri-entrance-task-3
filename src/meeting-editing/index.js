@@ -5,7 +5,7 @@ import "./style/input.css";
 import "./style/responsive.css";
 import { Timepicker } from "./components/timepicker";
 import { MembersSelect } from "./components/members-select";
-import { RoomSelect, RoomRecommended } from "./components/room-select";
+import { RoomSelect } from "./components/room-select";
 import { TitleInput } from "./components/title-input";
 import { Button } from "./components/button";
 
@@ -27,7 +27,6 @@ export const Editing = () => (
         <MembersSelect />
         <div className="mobile-divider" />
         <RoomSelect />
-        {/* <RoomRecommended/> */}
       </div>
     </div>
 

@@ -126,3 +126,23 @@ export const schedule = [
     dateEnd: 800
   }
 ];
+
+export const selectedTime = "16:00—16:30";
+
+export const recommendedRooms = [
+  {
+    title: "Готем",
+    floor: 1,
+    id: 1
+  },
+  {
+    title: "Ржавый Фред",
+    floor: 2,
+    id: 2
+  },
+  {
+    title: "Поле непаханное",
+    floor: 3,
+    id: 3
+  }
+];
