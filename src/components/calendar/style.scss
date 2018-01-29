@@ -31,13 +31,52 @@
 .calendar-button {
   &-left {
     @extend %button;
-    background-image: url("../../assets/arrow2.svg");
-    background-position: 7px center;
+    position: relative;
+    cursor: pointer;
+    &:before {
+      content: " ";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: 0.43;
+      background-repeat: no-repeat;
+      background-position: 7px center;
+      background-image: url("../../assets/arrow2.svg");
+    }
+    &:hover {
+      &:before {
+        opacity: 1;
+      }
+    }
   }
   &-right {
     @extend %button;
-    background-image: url("../../assets/arrow.svg");
-    background-position: 10px center;
+
+    position: relative;
+    cursor: pointer;
+    &:before {
+      content: " ";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: 0.43;
+      background-repeat: no-repeat;
+      background-image: url("../../assets/arrow.svg");
+      background-position: 10px center;
+    }
+    &:hover {
+      &:before {
+        opacity: 1;
+      }
+    }
   }
 }
 
