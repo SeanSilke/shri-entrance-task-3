@@ -25,6 +25,8 @@ export class Editing extends PureComponent {
   dateRefs = null;
   setDateRefs = refs => (this.dateRefs = refs);
 
+  onCancel = () => this.props.history.push("/");
+
   handleTitleInput(event) {
     this.setState({ title: event.target.value });
   }
@@ -74,7 +76,12 @@ export class Editing extends PureComponent {
         <div className="editing-main">
           <div className="row">
             <div className="editing-header-title"> Новая встреча </div>
-            <div className="editing-exit-button hidden-mobile"> </div>
+            <div
+              className="editing-exit-button hidden-mobile"
+              onClick={this.onCancel}
+            >
+              {" "}
+            </div>
           </div>
 
           <div className="row">
@@ -93,7 +100,7 @@ export class Editing extends PureComponent {
         </div>
 
         <div className="editing-bottom">
-          <Button title="Отмена" onClick={() => console.log(this.dateRefs)} />
+          <Button title="Отмена" onClick={this.onCancel} />
           <Button onClick={this.createEvent} title="Создать встречу" />
         </div>
       </Fragment>
