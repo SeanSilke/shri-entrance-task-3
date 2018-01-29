@@ -15,6 +15,10 @@ export class MembersSelect extends PureComponent {
   open = () => this.setState({ isOpen: true });
   close = () => this.setState({ isOpen: false, focusedOption: 0, search: "" });
 
+  componentWillUnmount() {
+    this.close = () => null;
+  }
+
   onInput = e =>
     this.setState({
       search: e.target.value,
@@ -118,6 +122,12 @@ export class MembersSelect extends PureComponent {
 
     const restItems = this.options();
 
+    // NOTE: Later binding of this close
+    // used in componentWillUnmount logic
+    const close = () => {
+      this.close();
+    };
+
     return (
       <div className="multi-select">
         <div className="editing-input-title">Участники</div>
@@ -127,7 +137,7 @@ export class MembersSelect extends PureComponent {
           onFocus={this.open}
           onClick={this.open}
           // NOTE: 150ms delay to to catch event from element selection
-          onBlur={() => setTimeout(this.close, 150)}
+          onBlur={() => setTimeout(close, 150)}
           onInput={this.onInput}
           value={search}
           placeholder="Например, Тор Одинович"
