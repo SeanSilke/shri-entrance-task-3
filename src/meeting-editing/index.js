@@ -25,7 +25,7 @@ export const Editing = () => (
 
       <div className="row">
         <MembersSelect />
-        <div class="mobile-divider" />
+        <div className="mobile-divider" />
         <RoomSelect />
         {/* <RoomRecommended/> */}
       </div>
