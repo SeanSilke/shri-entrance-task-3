@@ -1,9 +1,10 @@
 import React from "react";
 import "./style.css";
+import { Link } from "react-router-dom";
 
 export const Tooltip = () => (
   <div className="App-tooltip">
-    <div className="App-tooltip-button"> </div>
+    <Link to="/editing" className="App-tooltip-button" />
     <div className="tooltip-header">Рассуждения о высоком</div>
     <div className="tooltip-details">14 декабря, 15:00—17:00 · Жёлтый дом</div>
     <div className="tooltip-participants">
