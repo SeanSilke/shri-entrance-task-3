@@ -104,26 +104,26 @@ export const floors = {
   ]
 };
 
-export const schedule = [
+export const oneDayOneRoomSchedule = [
   {
     dateStart: 0,
-    dateEnd: 50
+    dateEnd: 10
   },
   {
-    dateStart: 90,
-    dateEnd: 200
+    dateStart: 15,
+    dateEnd: 27
   },
   {
-    dateStart: 250,
-    dateEnd: 300
+    dateStart: 30,
+    dateEnd: 40
   },
   {
-    dateStart: 350,
-    dateEnd: 500
+    dateStart: 56,
+    dateEnd: 63
   },
   {
-    dateStart: 600,
-    dateEnd: 800
+    dateStart: 70,
+    dateEnd: 82
   }
 ];
 

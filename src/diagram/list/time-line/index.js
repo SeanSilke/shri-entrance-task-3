@@ -1,39 +1,20 @@
 import React from "react";
-import { schedule } from "../../../data";
+import { oneDayOneRoomSchedule } from "../../../data";
 import { getFreeSlots } from "./helpers";
-import { DIAGRAM_LENGTH } from "../../../data/constants";
+import { Meeting } from "./components/meeting";
+import { FreeSlot } from "./components/free-slot";
+
 import "./style.css";
-import "./timeLine-slot.css";
 
-import ReactHoverObserver from "react-hover-observer";
+const freeSlots = getFreeSlots(oneDayOneRoomSchedule);
 
-const Meeting = ({ dateStart, dateEnd }) => (
-  <div
-    style={{
-      left: `${dateStart / DIAGRAM_LENGTH * 100}%`,
-      width: `${(dateEnd - dateStart) * 100 / DIAGRAM_LENGTH}%`
-    }}
-    className="timeLine-slot-occupied"
-  />
-);
+export const Timeline = props => {
+  const freeSlots = getFreeSlots(oneDayOneRoomSchedule);
 
-const FreeSlots = ({ dateStart, dateEnd, setHovering }) => (
-  <ReactHoverObserver onHoverChanged={setHovering}>
-    <div
-      style={{
-        left: `${dateStart / DIAGRAM_LENGTH * 100}%`,
-        width: `${(dateEnd - dateStart) * 100 / DIAGRAM_LENGTH}%`
-      }}
-      className="timeLine-slot-free"
-    />
-  </ReactHoverObserver>
-);
-
-export const Timeline = props => (
-  <div className="timeline">
-    {schedule.map((m, id) => <Meeting key={id} {...m} />)}
-    {getFreeSlots(schedule).map((m, id) => (
-      <FreeSlots key={id} {...m} {...props} />
-    ))}
-  </div>
-);
+  return (
+    <div className="timeline">
+      {oneDayOneRoomSchedule.map((m, id) => <Meeting key={id} {...m} />)}
+      {freeSlots.map((m, id) => <FreeSlot key={id} {...m} {...props} />)}
+    </div>
+  );
+};
