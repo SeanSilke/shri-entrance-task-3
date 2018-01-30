@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../button";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 export const Modal = props => {
@@ -12,7 +12,16 @@ export const Modal = props => {
           e.preventDefault();
         }}
       >
-        <Button to="/" title="Хорошо" />
+        <div className="App-modal-emoji" />
+        <div className="App-modal-header"> Встреча создана!</div>
+        <div className="App-modal-date">
+          {" "}
+          14 декабря, <span>15:00—17:00</span>
+        </div>
+        <div className="App-modal-room"> Готем · 4 этаж</div>
+        <Link to="/" className="App-modal-button">
+          Хорошо
+        </Link>
       </div>
     </div>
   );
