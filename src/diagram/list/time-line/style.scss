@@ -1,5 +1,6 @@
 .timeline {
   flex: 0 0 calc(100vw - 245px);
+  max-width: 1035px;
   height: 28px;
   align-self: center;
   z-index: 5;
@@ -7,5 +8,6 @@
   @media screen and (max-width: 640px) {
     height: 56px;
     flex: 0 0 1056px;
+    max-width: 1056px;
   }
 }

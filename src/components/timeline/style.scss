@@ -38,6 +38,10 @@
   position: absolute;
   top: 20px;
   left: 50%;
+  @media screen and (max-width: 640px) {
+    // 1056px / 2 + 181 || totalLength / 2 + padding-left = 50%
+    left: 709px;
+  }
   width: 1px;
   height: 1000px;
   background: #007dff;
