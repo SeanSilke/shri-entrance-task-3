@@ -11,6 +11,11 @@ import { Button } from "./components/button";
 
 export const Editing = props => {
   const onCancel = () => props.history.push("/");
+  const onSuccess = () =>
+    props.history.push({
+      pathname: `/`,
+      state: { modal: true }
+    });
 
   return (
     <Fragment>
@@ -38,7 +43,7 @@ export const Editing = props => {
 
       <div className="editing-bottom">
         <Button title="Отмена" onClick={onCancel} />
-        <Button title="Создать встречу" />
+        <Button title="Создать встречу" onClick={onSuccess} />
       </div>
     </Fragment>
   );
