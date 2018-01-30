@@ -17,6 +17,79 @@
     box-shadow: 0 1px 16px 0 rgba(0, 44, 92, 0.28);
     border-radius: 8px;
     width: 444px;
-    height: 252px;
+    padding: 32px;
+    @media screen and (max-width: 640px) {
+      width: 100vw;
+      position: fixed;
+      bottom: 24px;
+    }
+  }
+  &-emoji {
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-image: url("../../assets/touch-assets/emoji2.svg");
+    margin-bottom: 16px;
+    @media screen and (max-width: 640px) {
+      margin-bottom: 17px;
+    }
+  }
+
+  &-header {
+    font-family: HelveticaNeue-Bold;
+    font-size: 20px;
+    color: #000000;
+    letter-spacing: 0;
+    margin-bottom: 8px;
+    @media screen and (max-width: 640px) {
+    }
+  }
+
+  &-date {
+    font-family: HelveticaNeue;
+    font-size: 15px;
+    color: #000000;
+    letter-spacing: 0;
+    margin-bottom: 6px;
+    & > span {
+      font-family: Helvetica;
+    }
+  }
+  &-room {
+    font-family: HelveticaNeue;
+    font-size: 15px;
+    color: #000000;
+    letter-spacing: 0;
+    margin-bottom: 24px;
+  }
+
+  &-button {
+    padding: 0px 16px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background: #007dff;
+    border-radius: 4px;
+    font-family: HelveticaNeue-Medium;
+    font-size: 13px;
+    color: #ffffff;
+    user-select: none;
+    cursor: pointer;
+    text-decoration: none;
+    &:hover {
+      background: #0059ff;
+    }
+    &:active {
+      background: linear-gradient(rgba(11, 0, 255, 0.8), rgba(11, 0, 255, 0.8)),
+        linear-gradient(#0059ff, #0059ff);
+    }
+    @media screen and (max-width: 640px) {
+      font-size: 15px;
+      padding: 0px 31px;
+      line-height: 44px;
+      height: 44px;
+    }
   }
 }
