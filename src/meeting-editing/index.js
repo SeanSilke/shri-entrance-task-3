@@ -27,6 +27,12 @@ export class Editing extends PureComponent {
 
   onCancel = () => this.props.history.push("/");
 
+  onSuccess = () =>
+    this.props.history.push({
+      pathname: `/`,
+      state: { modal: true }
+    });
+
   handleTitleInput(event) {
     this.setState({ title: event.target.value });
   }
@@ -101,7 +107,12 @@ export class Editing extends PureComponent {
 
         <div className="editing-bottom">
           <Button title="Отмена" onClick={this.onCancel} />
-          <Button onClick={this.createEvent} title="Создать встречу" />
+          <Button
+            onClick={() => {
+              this.createEvent().then(this.onSuccess);
+            }}
+            title="Создать встречу"
+          />
         </div>
       </Fragment>
     );

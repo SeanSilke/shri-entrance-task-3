@@ -8,7 +8,7 @@ import { Tooltip } from "../components/tooltip";
 export const Diagram = () => (
   <Fragment>
     <Header>
-      <Button title="Создать встречу" />
+      <Button to="/new" title="Создать встречу" />
     </Header>
     <TimePanel />
     <List />
