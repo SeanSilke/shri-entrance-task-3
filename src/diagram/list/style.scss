@@ -12,6 +12,9 @@
   border-right: 1px solid #e9ecef;
   position: relative;
   min-height: calc(100vh - 117px);
+  @media screen and (max-width: 640px) {
+    min-height: calc(100vh - 137px);
+  }
   &::after {
     position: absolute;
     content: " ";
