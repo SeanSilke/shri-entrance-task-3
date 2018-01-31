@@ -46,6 +46,10 @@
       background-repeat: no-repeat;
       background-position: 7px center;
       background-image: url("../../assets/arrow2.svg");
+      @media screen and (max-width: 640px) {
+        background-image: url("../../assets/touch-assets/arrow.svg");
+        background-position: 10px center;
+      }
     }
     &:hover {
       &:before {
@@ -70,6 +74,10 @@
       opacity: 0.43;
       background-repeat: no-repeat;
       background-image: url("../../assets/arrow.svg");
+      @media screen and (max-width: 640px) {
+        background-image: url("../../assets/touch-assets/arrow.svg");
+        transform: rotate(180deg);
+      }
       background-position: 10px center;
     }
     &:hover {
